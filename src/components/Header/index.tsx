@@ -1,21 +1,21 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+
 import Button from '@/components/Button';
 
 import { headerData, headerSocialIcons } from '@/utils/constants';
 
 import Logo from '@public/svg/olvera-logo-black.svg';
-import Search from '@public/svg/search.svg';
 import HamburgerMenu from '@public/svg/menu.svg';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Import from next/navigation
+import Search from '@public/svg/search.svg';
 
 const Header = () => {
-    const pathname = usePathname(); // Use usePathname
-    console.log(pathname, 'router');
+    const pathname = usePathname();
 
     return (
-        <header className="px-4 py-7 xl:py-10 xl:px-24">
+        <header className="bg-white sticky top-0 z-50 px-4 py-7 xl:py-10 xl:px-24">
             <div className="flex items-center justify-between ">
                 <Logo className="cursor-pointer" />
 
