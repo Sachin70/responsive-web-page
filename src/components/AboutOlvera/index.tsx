@@ -11,7 +11,7 @@ const AboutOlvera = () => {
 
     return (
         <div className="relative px-4 text-center md:text-left md:px-20 bg-primary">
-            <div>
+            <div className="h-auto">
                 <Image src={isMobile ? AboutImageMobile : AboutImage} alt="About Olvera" />
             </div>
 
