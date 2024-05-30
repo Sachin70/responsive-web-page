@@ -12,8 +12,8 @@ const HeroSection = () => {
 
     return (
         <div className="relative">
-            <div className="relative w-full h-full">
-                <Image src={isMobile ? HeroImageMobile : HeroImage} alt="Hero image" priority />
+            <div className="relative">
+                <Image src={isMobile ? HeroImageMobile : HeroImage} alt="Hero image" />
                 <div className="absolute inset-0 bg-linear-gradient" />
             </div>
 

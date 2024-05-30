@@ -11,7 +11,9 @@ const AboutOlvera = () => {
 
     return (
         <div className="relative px-4 text-center md:text-left md:px-20 bg-primary">
-            <Image src={isMobile ? AboutImageMobile : AboutImage} alt="About Olvera" priority />
+            <div>
+                <Image src={isMobile ? AboutImageMobile : AboutImage} alt="About Olvera" />
+            </div>
 
             <p className="absolute w-[85%] text-center md:text-left text-white font-normal text-3xl leading-72 top-5 md:top-[22%]">
                 {aboutOlveraData?.title}
