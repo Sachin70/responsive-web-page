@@ -9,10 +9,15 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            fontFamily: { montSerratAlternate: ['Montserrat Alternates'] },
+            fontFamily: {
+                montSerratAlternate: ['Montserrat Alternates'],
+                montserrat: ['Montserrat'],
+            },
             backgroundImage: {
-                'linear-gradient':
+                'linear-gradient1':
                     'linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, rgba(18, 27, 33, 0.9) 100%)',
+                'linear-gradient2':
+                    'linear-gradient(90.45deg, rgba(194, 39, 142, 0.51) 0.36%, rgba(15, 15, 15, 0) 99.59%)',
             },
             fontSize: {
                 42: '42px',

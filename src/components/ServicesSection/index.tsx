@@ -14,12 +14,14 @@ const Services = () => {
                         <div className="text-primary hidden md:block font-semibold text-xl">
                             Services
                         </div>
-                        <div className="font-extrabold text-26 leading-36 xl:text-5xl xl:leading-60">
+                        <div className="font-extrabold text-26 leading-36 xl:text-5xl xl:leading-60 text-center xl:text-left">
                             {title}
                         </div>
                     </div>
 
-                    <p className="font-normal text-base leading-26">{description}</p>
+                    <p className="font-normal text-base leading-26 text-center xl:text-left">
+                        {description}
+                    </p>
 
                     <CircleDesktop className="absolute right-[220px] md:right-0 md:top-[-70px]" />
                 </div>
@@ -29,10 +31,16 @@ const Services = () => {
                 <div className="md: flex md: flex-col gap-y-3 md:my-14">
                     {serviceTpe?.map((item) => (
                         <div key={item.id} className="flex flex-col">
-                            {item.id > 1 && <div className='text-primary font-semibold xl:text-base xl:leading-60'>0{item.id}.</div>}
+                            {item.id > 1 && (
+                                <div className="text-primary font-semibold xl:text-base xl:leading-60">
+                                    0{item.id}.
+                                </div>
+                            )}
 
                             <div className="flex md:items-center justify-between md:w-full">
-                                <p className='font-extrabold text-base'>{item?.label}</p>
+                                <p className="font-montSerratAlternate font-extrabold text-base">
+                                    {item?.label}
+                                </p>
                                 <RightArrow height={30} width={50} className="cursor-pointer" />
                             </div>
 

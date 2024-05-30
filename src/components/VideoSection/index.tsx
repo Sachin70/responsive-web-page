@@ -49,6 +49,7 @@ const VideoSection = () => {
                             layout="fill"
                             className="absolute"
                         />
+                        <div className="absolute inset-0 inset-y-10 bg-linear-gradient2" />
                     </div>
                 }
                 onStart={onStart}

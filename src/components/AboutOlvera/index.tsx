@@ -10,25 +10,31 @@ const AboutOlvera = () => {
     const { isMobile, isTablet } = useScreenSize();
 
     return (
-        <div className="relative px-4 text-center md:text-left md:px-20 bg-primary">
-            <Image src={isMobile ? AboutImageMobile : AboutImage} alt="About Olvera" />
-
-            <p className="absolute w-[85%] text-center md:text-left text-white font-normal text-3xl leading-72 top-5 md:top-[22%]">
+        <div
+            className="px-4 py-7 text-center md:text-left md:px-24 bg-primary md:pt-28 md:pb-8"
+            style={{
+                backgroundImage: `url(${isMobile ? AboutImageMobile.src : AboutImage.src})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }}
+        >
+            <p className="text-center md:text-left text-white font-normal text-3xl leading-72 md:top-[22%]">
                 {aboutOlveraData?.title}
             </p>
 
-            <p className="absolute text-white top-24 font-extrabold text-40 leading-52 md:hidden ">
+            <p className="text-white font-extrabold text-40 leading-52 md:hidden">
                 {aboutOlveraData?.mobileHeading}
             </p>
 
-            <p className="absolute text-white top-[270px] md:leading-30 md:top-[34%] md:right-[8%] md:font-normal md:text-lg md:max-w-[420px]">
+            <p className="text-white mt-5 md:mt-3 md:leading-30 md:font-normal md:text-lg md:max-w-[420px] md:ml-auto">
                 {aboutOlveraData?.description}
             </p>
 
-            <div className="absolute top-[320px] md:top-[62%] flex items-center justify-between md:justify-normal gap-2 xl:gap-14 flex-wrap 2xl:justify-between 2xl:gap-40">
+            <div className="flex items-center justify-between gap-2 flex-wrap 2xl:justify-between md:mt-8">
                 {aboutOlveraData?.icons.map((iconData) => {
                     const Icon = iconData?.icon;
                     const MobileIcon = iconData?.mobileIcons;
+
                     return isTablet ? (
                         <MobileIcon key={iconData?.id} />
                     ) : (

@@ -25,7 +25,7 @@ const Careers = () => {
 
                     <p className="text-gray6 font-normal text-xl leading-34">{description}</p>
 
-                    <Button className="bg-primary2 py-4 px-7 font-semibold text-base">
+                    <Button className="bg-primary2 py-4 px-7 font-semibold text-base mb-16 md:mb-0">
                         Search Careers
                     </Button>
 
