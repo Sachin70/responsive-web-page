@@ -9,6 +9,7 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            fontFamily: { montSerratAlternate: ['Montserrat Alternates'] },
             backgroundImage: {
                 'linear-gradient':
                     'linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, rgba(18, 27, 33, 0.9) 100%)',

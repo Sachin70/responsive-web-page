@@ -13,7 +13,7 @@ const AboutOlvera = () => {
         <div className="relative px-4 text-center md:text-left md:px-20 bg-primary">
             <Image src={isMobile ? AboutImageMobile : AboutImage} alt="About Olvera" priority />
 
-            <p className="absolute w-[90%] md:w-full text-center md:text-left text-white font-normal text-3xl leading-72 top-5 md:top-[22%]">
+            <p className="absolute w-[85%] text-center md:text-left text-white font-normal text-3xl leading-72 top-5 md:top-[22%]">
                 {aboutOlveraData?.title}
             </p>
 
@@ -25,7 +25,7 @@ const AboutOlvera = () => {
                 {aboutOlveraData?.description}
             </p>
 
-            <div className="absolute top-[320px] md:top-[62%] flex items-center justify-between md:justify-normal gap-2 xl:gap-14 flex-wrap md:flex-nowrap 2xl:justify-between 2xl:gap-40">
+            <div className="absolute top-[320px] md:top-[62%] flex items-center justify-between md:justify-normal gap-2 xl:gap-14 flex-wrap 2xl:justify-between 2xl:gap-40">
                 {aboutOlveraData?.icons.map((iconData) => {
                     const Icon = iconData?.icon;
                     const MobileIcon = iconData?.mobileIcons;
