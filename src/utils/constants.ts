@@ -134,7 +134,7 @@ export const FooterData = {
         { id: 2, icon: OlveraCapital },
     ],
     mobileIcons: [
-        { id: 2, icon: Village },
+        { id: 1, icon: Village },
         { id: 2, icon: Climate },
         { id: 3, icon: Jaaims },
         { id: 4, icon: Dover },
