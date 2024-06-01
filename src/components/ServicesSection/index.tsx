@@ -9,7 +9,7 @@ const Services = () => {
     return (
         <div className="px-10 md:px-24 w-full gap-y-16 md:gap-16 relative flex mx-auto md:py-[72px] overflow-hidden flex-col md:flex-row">
             <div className="md:w-2/4">
-                <div className="md:max-w-xl md:mx-auto md: my-0 flex flex-col gap-y-6 md:gap-y-11 relative">
+                <div className="md:max-w-xl md: my-0 flex flex-col gap-y-6 md:gap-y-11 relative">
                     <div className="md:flex md:flex-col md:gap-y-5">
                         <div className="text-primary hidden md:block font-semibold text-xl">
                             Services
