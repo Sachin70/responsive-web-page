@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, memo } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import cx from 'classnames';
 
 import FeedbackCard from '@/components/FeedbackCard';
@@ -67,7 +67,7 @@ const FeedbackCarousel = (props: IProductCarouselProps) => {
 
     return (
         <div className={cx('px-4 py-11 xl:pt-0 xl:mx-24 xl:pb-24', className)}>
-            <p className="text-center font-bold text-28 leading-10 xl:text-5xl xl:mb-24 mb-10">
+            <p className="text-center font-bold text-28 leading-10 xl:text-5xl xl:mb-24 mb-10 font-plusJakartaSans">
                 {heading}
             </p>
 
@@ -115,4 +115,4 @@ const FeedbackCarousel = (props: IProductCarouselProps) => {
     );
 };
 
-export default memo(FeedbackCarousel);
+export default FeedbackCarousel;

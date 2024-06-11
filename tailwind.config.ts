@@ -12,6 +12,9 @@ const config: Config = {
             fontFamily: {
                 montSerratAlternate: ['Montserrat Alternates'],
                 montserrat: ['Montserrat'],
+                plusJakartaSans: ['Plus Jakarta Sans'],
+                oswald: ['OSwald'],
+                archivo: ['Archivo'],
             },
             backgroundImage: {
                 'linear-gradient1':
@@ -59,6 +62,7 @@ const config: Config = {
                 gray4: '#E0E0E0',
                 gray5: '#7C7C7C',
                 gray6: '#3F3E3E',
+                gray7: '#6E6E6E',
                 info: '#71C9FF',
                 success: '#76CA66',
                 warning: '#FBC756',

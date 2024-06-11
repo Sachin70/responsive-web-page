@@ -34,15 +34,15 @@ const Footer = () => {
             </div>
 
             <div className="bg-black1 absolute px-14 text-center xl:text-left flex flex-col items-center w-full xl:px-52">
-                <p className="mt-12 text-white font-semibold text-xl z-20 xl:mt-[160px] xl:text-64 xl:leading-70 xl:text-center">
+                <p className="mt-12 text-white font-semibold text-xl z-20 xl:mt-[160px] xl:text-64 xl:leading-70 xl:text-center font-montserrat">
                     {title}
                 </p>
 
-                <p className="mt-3 mb-7 text-gray4 font-normal text-xs z-20 xl:text-xl xl:mt-16 xl:mb-12 xl:text-center">
+                <p className="mt-3 mb-7 text-gray4 font-normal text-xs z-20 xl:text-xl xl:mt-16 xl:mb-12 xl:text-center font-plusJakartaSans">
                     {description}
                 </p>
 
-                <Button className="bg-primary2 py-[10px] px-5 z-20 xl:px-12 xl:bg-primary">
+                <Button className="bg-primary2 py-[10px] px-5 z-20 xl:px-12 xl:bg-primary font-plusJakartaSans">
                     Get Started
                 </Button>
 
@@ -68,13 +68,13 @@ const Footer = () => {
                             </p>
                         </div>
 
-                        <p className="text-gray4 mt-[176px] font-normal text-base xl:hidden">
+                        <p className="text-gray4 mt-[176px] font-normal text-base xl:hidden font-plusJakartaSans">
                             {message}
                         </p>
                     </div>
 
                     <div>
-                        <p className="text-white mt-10 mb-6 font-semibold text-26 leading-36 xl:mt-0 xl:text-lg">
+                        <p className="text-white mt-10 mb-6 font-semibold text-26 leading-36 xl:mt-0 xl:text-lg font-plusJakartaSans">
                             Resources
                         </p>
 
@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <p className="text-white mt-10 mb-6 font-semibold text-26 leading-36 xl:mt-0 xl:text-lg">
+                        <p className="text-white mt-10 mb-6 font-semibold text-26 leading-36 xl:mt-0 xl:text-lg font-plusJakartaSans">
                             Careers
                         </p>
 
@@ -107,7 +107,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="mt-16 flex flex-col gap-4 xl:max-w-32 w-full xl:mt-0">
+                    <div className="mt-16 flex flex-col gap-4 xl:max-w-32 w-full xl:mt-0 font-montserrat">
                         <p className="text-white font-medium text-xs xl:text-10 xl:leading-14">
                             {companyDetails?.themeMessage}
                         </p>
@@ -126,7 +126,9 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col items-center gap-4 mb-14 mt-16 xl:flex-row xl:justify-between xl:w-full xl:mt-32">
-                    <p className="text-white font-normal text-xs xl:text-sm">{copyRight}</p>
+                    <p className="text-white font-normal text-xs xl:text-sm font-plusJakartaSans">
+                        {copyRight}
+                    </p>
 
                     <div className="flex gap-10">
                         {socialIcons.map((icons) => {

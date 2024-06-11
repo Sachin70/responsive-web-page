@@ -15,17 +15,19 @@ const Careers = () => {
             <div className="md:w-2/4 px-14">
                 <div className="md:max-w-xl md:mx-auto md: my-0 flex flex-col gap-y-6 md:gap-y-11 relative justify-center items-center md:items-start h-full">
                     <div className="flex flex-col gap-y-5 items-center md:items-start">
-                        <div className="text-primary font-semibold text-sm xl:text-22 leading-6">
-                            Careers
+                        <div className="text-primary font-semibold text-sm xl:text-22 leading-6 font-oswald">
+                            CAREERS
                         </div>
-                        <p className="text-black4 font-semibold text-28 leading-30 xl:text-54 xl:leading-58">
+                        <p className="text-black4 font-semibold text-28 leading-30 xl:text-54 xl:leading-58 font-montserrat">
                             {title}
                         </p>
                     </div>
 
-                    <p className="text-gray6 font-normal text-xl leading-34">{description}</p>
+                    <p className="text-gray6 font-normal text-xl leading-34 font-plusJakartaSans">
+                        {description}
+                    </p>
 
-                    <Button className="bg-primary2 py-4 px-7 font-semibold text-base mb-16 md:mb-0">
+                    <Button className="bg-primary2 py-4 px-7 font-semibold text-base mb-16 md:mb-0 font-plusJakartaSans">
                         Search Careers
                     </Button>
 

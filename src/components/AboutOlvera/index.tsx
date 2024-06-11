@@ -18,7 +18,7 @@ const AboutOlvera = () => {
                 backgroundPosition: 'center',
             }}
         >
-            <p className="text-center md:text-left text-white font-normal text-3xl leading-72 md:top-[22%]">
+            <p className="text-center md:text-left text-white font-normal text-3xl leading-72 font-plusJakartaSans">
                 {aboutOlveraData?.title}
             </p>
 
@@ -26,7 +26,7 @@ const AboutOlvera = () => {
                 {aboutOlveraData?.mobileHeading}
             </p>
 
-            <p className="text-white mt-5 md:mt-3 md:leading-30 md:font-normal md:text-lg md:max-w-[420px] md:ml-auto">
+            <p className="text-white mt-5 md:mt-3 md:leading-30 md:font-normal md:text-lg md:max-w-[420px] md:ml-auto font-archivo">
                 {aboutOlveraData?.description}
             </p>
 

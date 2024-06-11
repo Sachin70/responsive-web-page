@@ -11,15 +11,15 @@ const Services = () => {
             <div className="md:w-2/4">
                 <div className="md:max-w-xl md: my-0 flex flex-col gap-y-6 md:gap-y-11 relative">
                     <div className="md:flex md:flex-col md:gap-y-5">
-                        <div className="text-primary hidden md:block font-semibold text-xl">
-                            Services
+                        <div className="text-primary hidden md:block font-semibold text-xl font-oswald">
+                            SERVICES
                         </div>
-                        <div className="font-extrabold text-26 leading-36 xl:text-5xl xl:leading-60 text-center xl:text-left">
+                        <div className="font-extrabold text-26 leading-36 xl:text-5xl xl:leading-60 text-center xl:text-left font-plusJakartaSans">
                             {title}
                         </div>
                     </div>
 
-                    <p className="font-normal text-base leading-26 text-center xl:text-left">
+                    <p className="font-normal text-base leading-26 text-center xl:text-left text-gray7 font-archivo">
                         {description}
                     </p>
 
@@ -32,7 +32,7 @@ const Services = () => {
                     {serviceTpe?.map((item) => (
                         <div key={item.id} className="flex flex-col">
                             {item.id > 1 && (
-                                <div className="text-primary font-semibold xl:text-base xl:leading-60">
+                                <div className="text-primary font-semibold xl:text-base xl:leading-60 font-montserrat">
                                     0{item.id}.
                                 </div>
                             )}

@@ -19,6 +19,7 @@ const Header = () => {
             <div className="font-montSerratAlternate bg-primary text-white font-extrabold text-base text-center py-4 ">
                 Turning Uncertainity Into your advantage
             </div>
+
             <header className="bg-white px-4 py-7 xl:py-10 xl:px-24">
                 <div className="flex items-center justify-between ">
                     <Logo className="cursor-pointer" />
@@ -32,7 +33,7 @@ const Header = () => {
                         {headerData.map((data) => (
                             <Link key={data?.id} href={data?.url}>
                                 <p
-                                    className={`font-extrabold text-base cursor-pointer  hover:opacity-70 font-montSerratAlternate uppercase ${
+                                    className={`font-extrabold text-base cursor-pointer hover:opacity-70 font-montSerratAlternate uppercase ${
                                         pathname === data?.url
                                             ? 'text-black1 border-b-2 border-primary'
                                             : ' text-secondary'
